@@ -1,0 +1,34 @@
+# Secrets — never commit these
+android/keystore.properties
+release/*.keystore
+*.keystore
+*.jks
+*.p12
+.env
+.env.*
+*.secret
+
+# Android local/build outputs
+android/local.properties
+android/.gradle/
+android/build/
+android/app/build/
+android/captures/
+android/.idea/
+android/app/release/
+*.apk
+*.aab
+
+# Editor / OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+build.log
+test-*.png
+shots-*.png

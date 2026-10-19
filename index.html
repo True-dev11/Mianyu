@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN" data-skin="moon" data-density="comfortable" data-corners="soft" data-motion="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F3F0EA">
+  <meta name="description" content="眠屿 · 一个安静、只属于你的睡眠日记。">
+  <title>眠屿 · 睡眠日记</title>
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+  <div class="app-frame" id="app">
+    <main class="main" id="main" tabindex="-1">
+      <div class="boot-skeleton" aria-hidden="true">
+        <div class="boot-line short"></div>
+        <div class="boot-hero"></div>
+        <div class="boot-line"></div>
+      </div>
+    </main>
+
+    <nav class="tabbar" aria-label="主导航">
+      <button class="nav-item" type="button" data-nav="home" aria-label="首页">
+        <span class="nav-icon" data-icon="home"></span>
+        <span class="nav-label">首页</span>
+      </button>
+      <button class="nav-item" type="button" data-nav="trends" aria-label="趋势">
+        <span class="nav-icon" data-icon="chart"></span>
+        <span class="nav-label">趋势</span>
+      </button>
+      <button class="record-fab" type="button" data-action="open-record" aria-label="记录睡眠">
+        <span class="record-fab-circle" data-icon="plus"></span>
+        <span class="record-fab-label">记录</span>
+      </button>
+      <button class="nav-item" type="button" data-nav="diary" aria-label="日记">
+        <span class="nav-icon" data-icon="book"></span>
+        <span class="nav-label">日记</span>
+      </button>
+      <button class="nav-item" type="button" data-nav="settings" aria-label="设置">
+        <span class="nav-icon" data-icon="settings"></span>
+        <span class="nav-label">设置</span>
+      </button>
+    </nav>
+
+    <div class="sheet-root" id="sheet-root" aria-live="polite"></div>
+    <div class="toast-host" id="toast-host" role="status" aria-live="polite"></div>
+    <input class="visually-hidden" id="import-file" type="file" accept="application/json,.json" tabindex="-1">
+  </div>
+
+  <noscript>
+    <div class="noscript">眠屿需要 JavaScript 才能记录睡眠，请启用后再试。</div>
+  </noscript>
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
