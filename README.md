@@ -8,12 +8,11 @@
 
 ## 安卓 APK
 
-- 本地构建产物：`release/Mianyu-0.2.0.apk`（APK 默认被 `.gitignore` 排除，GitHub 建议用 Releases 发布）
+- 本地构建产物：`release/Mianyu-0.2.0.apk`
 - 包名：`com.mianyu.sleepdiary`
 - 版本：0.2.0（versionCode 2）
 - 大小：151,015 字节（约 148 KB）
 - 支持：Android 6.0+（minSdk 23），targetSdk 35
-- SHA-256：`DA49972BA2F478C2BF2E3A4C7F86805B016795494D9AE79EDF74D52F43A43EEA`
 - 安装、签名、数据和构建说明：[`release/README.md`](release/README.md)
 
 注意：APK 的数据与网页测试的数据互相独立。首次安装会带 420 晚示例数据，正式使用前在 **设置 → 数据 → 清空示例**。
